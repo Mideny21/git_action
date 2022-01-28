@@ -12,14 +12,11 @@ jobs:
   lint:
     name: Analyze the code
     steps:
-      - name: Clone flutter repository from stable channel with 2.8.1 version
+      - uses: actions/checkout@v2
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '2.8.1'
           channel: 'stable'
-
-      - name: Checkout code
-        uses: actions/checkout@v2
 
       - name: Update dependencies
         run: flutter pub get
