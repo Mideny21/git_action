@@ -27,7 +27,7 @@ jobs:
       - name: Flutter version
         run: flutter --version
 
-  test:
+  # test:
 
 
-  build:
+  # build:
